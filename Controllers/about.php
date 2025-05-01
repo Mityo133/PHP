@@ -13,6 +13,6 @@
     $filterd = array_filter($books, function($car){
       return $car['country'] === "USA";
    });
- require "views/about.view.php";
+ require base_path("views/about.view.php");
 ?>
 

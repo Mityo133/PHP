@@ -19,5 +19,5 @@ if (!$note) {
     require "views/403.view.php";
     exit();
 }
-require "views/note.view.php";
+require base_path("views/notes/note.view.php");
 ?>

@@ -9,11 +9,16 @@
 </head>
 <?php require 'views/partials/buttons.php'; ?>
 <body>
-<a class="btn-danger" href="/notes">Go back</a>
-  <ul>
-  <?php foreach ($note as $not): ?> 
-       <li><?= $not['body'] ?></li>
-  <?php endforeach;?>
-</ul>
+<ul>
+   <?php foreach ($notes as $note): ?> 
+   <li>
+         <a href="/notes/note?id=<?=$note['id']?>" class="text-blue:"><?=$note['body']?></a>
+   </li>
+
+   <?php endforeach;?>
+   </ul>
+   <p>
+      <a href="/create">Click here to add items</a>
+   </p>
 </body>
 </html>
